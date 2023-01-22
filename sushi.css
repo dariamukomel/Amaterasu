@@ -1,0 +1,128 @@
+@font-face {
+    font-family: HanZi;
+    src: url(fonts/HanZi.ttf);
+}
+
+* {
+    font-family: HanZi;
+}
+body{
+    background: black;
+    
+}
+.header{
+    width: 100%;
+    color: white;
+    padding: 20px;
+    background: rgb(43, 45, 47);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+}
+.container{
+    max-width: 100%;
+    padding: 0 10px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.header-logo{
+    display: flex;
+    flex-direction: row;
+}
+.logo-title{
+    padding-top: 10px;
+
+}
+.logo-img{
+    width: 70px;
+    height: 70px;
+}
+.basket-img{
+    width: 60px;
+    height: 60px;
+}
+
+.footer{
+    max-width: 100%;
+    background:  rgb(43, 45, 47); 
+    color: white;
+    padding: 20px;
+    
+}
+.footer-inf{
+    max-width: 100%;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    font-family: hnc, Helvetica, Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+    color: darkgray;
+}
+.footer-container{
+    max-width: 2000px;
+    padding: 0 15px;
+    margin-left: 0px;
+    
+    display: flex;
+    justify-content: space-around;
+}
+.logo-img-footer{
+    width: 50px;
+    height: 50px;
+}
+.line{
+    height: 5px;
+    width: 40px;
+    background: white;
+    margin: 5px;
+}
+.menu-button{
+    display: flex;
+    flex-direction: column;
+    padding-top: 9px;
+    padding-right: 10px;
+}
+.cards-container{
+   display: block;
+   margin: 200px auto 100px 30%;
+    
+
+}
+.row{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    
+    
+}
+.card{
+    width: 400px;
+    height: 500px;
+    border: solid 1px rgb(68, 71, 74);
+    border-radius: 0px;
+    padding: 20px;
+    margin: 0px;
+    background: black;
+    color: white;
+}
+h2{
+    display: block;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+.menu{
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 110;
+    left: 0;
+    display: flex;
+    z-index: 1;
+    background: rgb(43, 45, 47);
+}
