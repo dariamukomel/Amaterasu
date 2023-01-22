@@ -12,9 +12,7 @@
     font-family: HanZi;
     
 }
-a{
-    color: white;
-}
+
 .header{
     width: 100%;
     color: white;
@@ -83,7 +81,7 @@ a{
     height: 50px;
 }
 .line{
-    height: 5px;
+    height: 2px;
     width: 40px;
     background: white;
     margin: 5px;
@@ -91,38 +89,16 @@ a{
 .menu-button{
     display: flex;
     flex-direction: column;
-    padding-top: 9px;
+    padding-top: 15px;
     padding-right: 10px;
     padding-left: 10px;
+    border-radius: 5px;
+    border: solid 1px darkgray;
+    margin-right: 10px;
 }
-.menu-button:hover{
-    background: rgb(68, 71, 74);
 
-}
-.menu-link{
-    text-decoration: none;
-}
-.menu{
-    width: 250px;
-    height: 100%;
-    position: fixed;
-    top: 110;
-    left: 0;
-    display: flex;
-    z-index: 1;
-    background: rgb(43, 45, 47);
-    color: white;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    
-}
-.menu-item{
-    display: flex;
-    flex-direction: row;
-    height: 64px;
-}
-.menu-title{
-    padding-top: 20px;
-}
+
+
+
 
 
