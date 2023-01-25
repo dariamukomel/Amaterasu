@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="Amaterasu.css">
+    
 
 </head>
 
@@ -16,9 +17,19 @@
         <div class="container">
 
             <div class="header-logo">
-                <div class="menu-button"><div class="line"></div><div class="line"></div><div class="line"></div></div>
+                <button  id="menu-button-show" onclick="document.getElementById('menu-block').style.display='block';
+                document.getElementById('menu-button-show').style.display='none';
+                document.getElementById('menu-button-hide').style.display='block';
+                document.getElementById('column001').style.width='20%';
+                document.getElementById('column002').style.width='80%';"> <img src="img/menu.png" class="menu-button"></button>
+                <button  id="menu-button-hide" onclick="document.getElementById('menu-block').style.display='none';
+                document.getElementById('menu-button-show').style.display='block';
+                document.getElementById('menu-button-hide').style.display='none';
+                document.getElementById('column001').style.width='0%';
+                document.getElementById('column002').style.width='100%';"> <img src="img/menu.png" class="menu-button"></button>
                 <img class="logo-img" src="img/logo.png">
-                <h1 class="logo-title">Amaterasu</h1>
+                <a href="Amaterasu.html" class="Amaterasu-link">
+                <h1 class="logo-title">Amaterasu</h1></a>
             </div>
             <div class="basket">
                 <img class="basket-img" src="img/basketlogo.png">
@@ -31,42 +42,82 @@
 
 
     <main class="main">
-
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+        <section class="column01" id="column001">
+            <div class="menu" id="menu-block" >
+                <div class="menu-item">
+                    <img class="menu-img" src="img/sushi.png">
+                    <a href="sushi.html" class="menu-link">
+                        <h6 class="menu-title">Суши</h6></a> 
+                </div>
+                <div class="menu-item">
+                    <img class="menu-img" src="img/rolls.png">
+                    <a href="rolls.html" class="menu-link">
+                    <h6 class="menu-title">Роллы</h6></a>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-img" src="img/salad.png">
+                    <a href="salads.html" class="menu-link">
+                    <h6 class="menu-title">Салаты и Закуски</h6></a>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-img" src="img/soup.png">
+                    <a href="soups.html" class="menu-link">
+                    <h6 class="menu-title">Супы</h6></a>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-img" src="img/hot.png">
+                    <a href="hot.html" class="menu-link">
+                    <h6 class="menu-title">Горячее</h6></a>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-img" src="img/rice.png">
+                    <a href="rice.html" class="menu-link">
+                    <h6 class="menu-title">Лапша, Wok & Рис</h6></a>
+                </div>
+                <div class="menu-item">
+                    <img class="menu-img" src="img/drinks.png">
+                    <a href="drinks.html" class="menu-link">
+                    <h6 class="menu-title">Напитки</h6></a>
+                </div>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/1.jpg" class="d-block w-100" alt="...">
+        </section>
+
+        <section class="column02" id="column002">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-item">
-                    <img src="img/2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/3.png" class="d-block w-100" alt="...">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="img/3.png" class="d-block w-100" alt="...">
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-        
 
 
+
+        </section>
 
     </main>
 

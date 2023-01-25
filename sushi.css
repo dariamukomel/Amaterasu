@@ -6,11 +6,35 @@
 * {
     font-family: HanZi;
 }
-body{
-    background: black;
-    
+
+a {
+    color: white;
+    text-decoration: none;
 }
-.header{
+.menu-link:hover{
+    color: gold;
+}
+.Amaterasu-link:hover{
+    color: white;
+}
+body {
+    background: black;
+
+}
+#menu-button-show{
+    display: block;
+    padding: 0px;
+    border: 0px;
+}
+#menu-button-hide{
+    display: none;
+    padding: 0px;
+    border: 0px;
+}
+#menu-block{
+    display: none;
+}
+.header {
     width: 100%;
     color: white;
     padding: 20px;
@@ -20,9 +44,10 @@ body{
     left: 0;
     right: 0;
     z-index: 1;
-    
+
 }
-.container{
+
+.container {
     max-width: 100%;
     padding: 0 10px;
     margin-left: 0px;
@@ -30,108 +55,173 @@ body{
     justify-content: space-between;
 
 }
-.header-logo{
+
+.header-logo {
     display: flex;
     flex-direction: row;
 }
-.logo-title{
+
+.logo-title {
     padding-top: 10px;
 
 }
-.logo-img{
+
+.logo-img {
     width: 70px;
     height: 70px;
 }
-.basket-img{
+
+.basket-img {
     width: 60px;
     height: 60px;
 }
 
-.footer{
+.footer {
     max-width: 100%;
-    background:  rgb(43, 45, 47); 
+    background: rgb(43, 45, 47);
     color: white;
     padding: 20px;
-    
+
 }
-.footer-inf{
+
+.footer-inf {
     max-width: 100%;
     font-size: 0.75rem;
     line-height: 1.4;
     font-family: hnc, Helvetica, Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
     color: darkgray;
 }
-.footer-container{
+
+.footer-container {
     max-width: 2000px;
     padding: 0 15px;
     margin-left: 0px;
-    
+
     display: flex;
     justify-content: space-around;
 }
-.logo-img-footer{
+
+.logo-img-footer {
     width: 50px;
     height: 50px;
 }
-.line{
-    height: 2px;
-    width: 40px;
-    background: white;
-    margin: 5px;
+
+.menu-button {
+    width: 70px;
+    height: 70px;
 }
-.menu-button{
-    display: flex;
-    flex-direction: column;
-    padding-top: 15px;
-    padding-right: 10px;
-    padding-left: 10px;
-    border-radius: 5px;
-    border: solid 1px darkgray;
-    margin-right: 10px;
-}   
-.cards-container{
-   display: block;
-   margin: 200px auto 100px 30%;
-  
-    
+.cards-container {
+    display: block;
+    margin: auto auto 100px 300px;
 
 }
-.row{
+
+.row {
     display: flex;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    
-    
+
+
 }
-.card{
+
+.card {
     width: 25%;
-    height: 500px;
+    height: 50%;
     border: solid 1px rgb(68, 71, 74);
     border-radius: 0px;
     padding: 20px;
     margin: 0px;
     background: black;
     color: white;
+    position: relative;
 }
-h2{
+.card:hover{
+    border: solid 1px gold;
+}
+.card-text{
+    font-family: hnc, Helvetica, Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+    color: rgb(68, 71, 74);
+    font-size: 20px;
+    display: block;
+    height: 120px;
+    overflow: auto;
+}
+.card-text::-webkit-scrollbar{
+    width: 0;
+}
+.card-title {
+    
+    display: block;
+    height: 50px;
+    overflow: hidden;
+}
+h2 {
     display: block;
     font-weight: bold;
     color: white;
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 50px;
+    padding: 30px 0;
     font-size: 50px;
 }
-.menu{
-    width: 300px;
-    height: 300px;
-    position: fixed;
-    top: 110;
-    left: 0;
-    display: flex;
-    z-index: 1;
+
+.menu {
+    /*    width: 250px; */
+    height: 100%;
+    /*    position: fixed;
+        top: 110;
+        left: 0;
+        display: flex;
+        z-index: 1; */
     background: rgb(43, 45, 47);
+    color: white;
+    /*    flex-wrap: wrap;
+        align-content: flex-start; */
+    display: none;
+
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    height: 64px;
+    border-bottom: 1px solid rgb(68, 71, 74);
+}
+
+.menu-title {
+    padding-top: 20px;
+}
+
+.column01 {
+    width: 0%;
+}
+
+.column02 {
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 110px;
+}
+.card-main-block{
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    align-items: flex-end;
 }
 
 
+.add{
+    display: flex;
+    justify-content: center;
+}
+.price, .min, .zero, .plus{
+    font-family: cr45;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px;
 
+}
